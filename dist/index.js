@@ -36,8 +36,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const core = __importStar(__nccwpck_require__(186));
+const util = __importStar(__nccwpck_require__(669));
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
+        core.info('complete env:');
+        core.info(util.inspect(process.env));
+        core.info('##############################################');
         core.info(`GITHUB_ACTION_PATH: ${process.env['GITHUB_ACTION_PATH']}`);
     });
 }
