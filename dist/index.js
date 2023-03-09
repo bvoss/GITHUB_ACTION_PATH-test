@@ -43,6 +43,7 @@ function run() {
         core.info(util.inspect(process.env));
         core.info('##############################################');
         core.info(`GITHUB_ACTION_PATH: ${process.env['GITHUB_ACTION_PATH']}`);
+        core.info(`that:simple? ${__dirname}`);
     });
 }
 run();
